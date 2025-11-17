@@ -1,0 +1,199 @@
+/* --- Gaya untuk komponen histori.php --- */
+
+.content-container {
+    padding: 20px;
+    max-width: 1200px; /* Lebar maksimum untuk konten utama */
+    margin: 0 auto;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Penyesuaian Judul */
+.card h2 {
+    color: #152d6b;
+    margin-bottom: 5px;
+}
+
+/* Mengubah ukuran dan posisi teks deskripsi */
+.card .description-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px; /* Jarak antara deskripsi dan filter */
+    display: block;
+    text-align: center;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    /* KRUSIAL: Agar tabel mengambil lebar penuh container */
+    width: 100%; 
+    border-collapse: collapse;
+    /* KRUSIAL: Gunakan fixed agar lebar kolom konsisten */
+    table-layout: fixed; 
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    /* Default: Rata kiri, kita akan override untuk yang perlu center */
+    text-align: left; 
+    vertical-align: top;
+}
+
+/* KRUSIAL: Hanya TH yang tidak boleh pecah baris */
+th {
+    white-space: nowrap;
+}
+
+/* CLASS BARU: Untuk membuat teks rata tengah */
+.text-center {
+    text-align: center;
+}
+
+/* Lebar Kolom Spesifik (TOTAL harus 100% jika menggunakan table-layout: fixed) */
+/* DITAMBAH DARI 6% MENJADI 7% */
+.col-no { 
+    width: 7%; 
+    /* Padding Khusus untuk kolom No agar lebih ramping */
+    padding: 8px 5px; 
+} 
+/* DIKURANGI DARI 14% MENJADI 13% */
+.col-nama-alat { 
+    width: 13%; 
+    white-space: normal; 
+    word-break: break-word;
+}
+.col-tanggal { width: 15%; } /* Tanggal Maintenance */
+.col-jenis { width: 30%; } /* Jenis Maintenance: diberi porsi terbesar */
+.col-periode { width: 10%; }
+.col-tgl-next { width: 25%; } 
+/* TOTAL: 7 + 13 + 15 + 30 + 10 + 25 = 100% */
+
+
+thead th {
+    background-color: #004d99; 
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e6f7ff; 
+}
+
+tbody td {
+    font-size: 13px;
+}
+
+/* Gaya untuk kontrol filter dan tombol */
+.filter-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    flex-grow: 1; 
+    min-width: 150px;
+}
+
+.month-select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: auto; 
+    flex-shrink: 0;
+}
+
+.year-select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: auto; 
+    flex-shrink: 0;
+}
+
+.btn-terapkan, .btn-export {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.btn-terapkan {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-export {
+    background-color: #28a745;
+    color: white;
+    margin-left: auto;
+}
+
+.btn-terapkan:hover {
+    background-color: #0056b3;
+}
+
+.btn-export:hover {
+    background-color: #1e7e34;
+}
+
+/* MEDIA QUERIES untuk responsivitas yang lebih baik */
+@media (max-width: 768px) {
+    .filter-controls {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    /* Input, select, dan tombol dibagi-bagi */
+    .search-input {
+        flex-basis: 100%; 
+        order: 1;
+        margin-bottom: 10px;
+    }
+
+    .month-select {
+        flex-basis: calc(50% - 5px);
+        order: 2;
+    }
+    
+    .btn-terapkan {
+        flex-basis: calc(50% - 5px);
+        order: 3;
+    }
+    
+    .btn-export {
+        width: 100%;
+        margin-left: 0;
+        order: 4;
+    }
+    
+    th, td {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+}

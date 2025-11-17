@@ -1,0 +1,228 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #f8f9fa;
+}
+.navbar {
+  width: 100%;
+  background-color: #ffffff; /* background putih */
+  color: #152d6b; /* teks biru tua */
+  display: flex;
+  justify-content: flex-start; /* Pusatkan konten navbar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #152d6b10; /* garis halus bawah */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  padding: 0;
+}
+
+/* Container di dalam navbar */
+.container-fluid {
+  width: 100%;
+  max-width: 1100px; 
+  display: flex;
+  align-items: center;
+  gap: 40px; 
+  /* Padding vertikal saja - DIKURANGI AGAR KOTAK NAVBAR LEBIH PENDEK/RAMPING */
+  padding: 10px 20px;
+}
+
+/* BARU: Pembungkus Kiri (Logo + Menu) */
+.navbar-left-group {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+/* Logo + brand */
+.navbar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* MENGUBAH: Hapus padding-left dari sini karena sudah dipindahkan ke .navbar-left-group */
+  padding-left: 0; 
+}
+
+/* Logo */
+.logo {
+  /* DIKURANGI AGAR KOTAK NAVBAR LEBIH PENDEK/RAMPING */
+  width: 45px;
+  height: auto;
+}
+
+/* Teks brand */
+.navbar-brand {
+  color: #152d6b;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar-brand:hover {
+  color: #0e1f4f;
+  transition: 0.3s;
+}
+
+/* Menu navigasi */
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  /* MENAMBAH: Memberikan jarak antara Brand SIREN dan Menu */
+  margin-left: 20px; 
+  flex-grow: 0; 
+}
+
+.navbar-nav li a {
+  color: #152d6b;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 3px;
+}
+
+/* Hover: garis bawah halus */
+.navbar-nav li a:hover {
+  color: #0e1f4f;
+  border-bottom: 2px solid #152d6b;
+}
+
+/* Item aktif (misal halaman yang sedang dibuka) */
+.navbar-nav .active a {
+  font-weight: 600;
+  border-bottom: 2px solid #152d6b;
+}
+
+/* Kanan: ikon profil */
+.navbar-profile {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 5px; 
+}
+
+.profile-icon {
+  /* DIKURANGI AGAR KOTAK NAVBAR LEBIH PENDEK/RAMPING */
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #152d6b20;
+  transition: transform 0.2s ease, border-color 0.2s;
+}
+
+.profile-icon:hover {
+  transform: scale(1.05);
+  border-color: #152d6b;
+}
+
+/* Ruang biar konten gak ketiban navbar */
+body::before {
+  content: "";
+  display: block;
+  height: 60px;
+}
+
+/* === FORM CONTAINER === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+}
+
+.form-container {
+  margin: 25px auto;
+  max-width: 600px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 30px 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-container h2 {
+  color: #152d6b;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* === FORM ELEMENTS === */
+.maintenance-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #152d6b;
+  outline: none;
+}
+
+/* === BUTTONS === */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-submit {
+  background-color: #152d6b;
+  color: white;
+}
+
+.btn-submit:hover {
+  background-color: #0f1f4f;
+}
+
+.btn-reset {
+  background-color: #929491;
+  color: white;
+}
+
+.btn-reset:hover {
+  background-color: #696b68;
+}

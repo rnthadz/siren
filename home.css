@@ -1,0 +1,370 @@
+/* ========== RESET & GLOBAL ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding-bottom: px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #ffffff; /* background putih */
+  color: #152d6b; /* teks biru tua */
+  display: flex;
+  justify-content: flex-start; /* Pusatkan konten navbar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #152d6b10; /* garis halus bawah */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  padding: 0;
+}
+
+/* Container di dalam navbar */
+.container-fluid {
+  width: 100%;
+  max-width: 1100px; 
+  display: flex;
+  align-items: center;
+  gap: 40px; 
+  /* Padding vertikal saja - DIKURANGI AGAR KOTAK NAVBAR LEBIH PENDEK/RAMPING */
+  padding: 10px 20px;
+}
+
+/* BARU: Pembungkus Kiri (Logo + Menu) */
+.navbar-left-group {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+/* Logo + brand */
+.navbar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* MENGUBAH: Hapus padding-left dari sini karena sudah dipindahkan ke .navbar-left-group */
+  padding-left: 0; 
+}
+
+/* Logo */
+.logo {
+  /* DIKURANGI AGAR KOTAK NAVBAR LEBIH PENDEK/RAMPING */
+  width: 45px;
+  height: auto;
+}
+
+/* Teks brand */
+.navbar-brand {
+  color: #152d6b;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar-brand:hover {
+  color: #0e1f4f;
+  transition: 0.3s;
+}
+
+/* Menu navigasi */
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  /* MENAMBAH: Memberikan jarak antara Brand SIREN dan Menu */
+  margin-left: 20px; 
+  flex-grow: 0; 
+}
+
+.navbar-nav li a {
+  color: #152d6b;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 3px;
+}
+
+/* Hover: garis bawah halus */
+.navbar-nav li a:hover {
+  color: #0e1f4f;
+  border-bottom: 2px solid #152d6b;
+}
+
+/* Item aktif (misal halaman yang sedang dibuka) */
+.navbar-nav .active a {
+  font-weight: 600;
+  border-bottom: 2px solid #152d6b;
+}
+
+/* Kanan: ikon profil */
+.navbar-profile {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 5px; 
+}
+
+.profile-icon {
+  /* DIKURANGI AGAR KOTAK NAVBAR LEBIH PENDEK/RAMPING */
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #152d6b20;
+  transition: transform 0.2s ease, border-color 0.2s;
+}
+
+.profile-icon:hover {
+  transform: scale(1.05);
+  border-color: #152d6b;
+}
+
+/* Biar konten ga ketiban navbar */
+body::before {
+  content: "";
+  display: block;
+  /* DIKURANGI AGAR KOTAK NAVBAR LEBIH PENDEK/RAMPING */
+  height: 60px;
+}
+
+
+/* ========== CONTENT WRAPPER ========== */
+.content {
+  padding: 20px; /* Padding samping dan bawah */
+  padding-top: 20px; 
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ========== SUMMARY CARDS (Modifikasi Tata Letak) ========== */
+.summary {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+  margin-bottom: 30px;
+  /* Tambahkan max-width agar kartu ringkasan di tengah */
+  max-width: 1100px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  /* Default: Dibuat untuk 2 kartu berdampingan */
+  flex: 1 1 calc(33.333% - 13.333px); 
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  min-width: 150px; 
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card h3 {
+  color: #152d6b;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.card p {
+  font-size: 28px; /* Sedikit lebih besar */
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Kelas untuk kartu yang mengambil lebar penuh dan terpusat */
+.card-full {
+  width: 100%;
+  max-width: 1100px; /* Batasi lebar maksimum agar terlihat bagus */
+  margin: 0 auto 20px; /* Tengah, beri jarak bawah */
+}
+
+/* Khusus untuk kartu Pengingat Terkirim (yang di tengah) */
+.card-reminder {
+    padding: 30px 20px;
+    margin-bottom: 30px;
+}
+.card-reminder p {
+    font-size: 36px;
+    color: #152d6b;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .card {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 600px) {
+  /* Di layar kecil, semua kartu harus menjadi lebar penuh */
+  .summary {
+      max-width: 100%;
+  }
+  .card {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+  }
+  .card-full {
+    max-width: 100%;
+  }
+  .navbar-nav {
+    display: none; /* Sembunyikan menu di mobile, atau gunakan menu hamburger jika ini app full */
+  }
+  .container-fluid {
+    justify-content: space-between;
+  }
+}
+
+/* ========== CHART (Modifikasi agar terpusat dan lebar terkontrol) ========== */
+.chart {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  margin: 0 auto 30px; /* Tengah dan beri jarak bawah */
+  width: 100%;
+  max-width: 1100px; /* Lebar maksimum sama dengan kartu reminder */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart h2 {
+  color: #152d6b;
+  font-size: 1.1rem;
+  font-weight: 650;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* chart canvas biar full tapi proporsional */
+.chart canvas {
+  width: 100% !important;
+  max-width: 800px;
+  height: 320px !important;
+}
+
+/* ========== TABLE (JADWAL) (Modifikasi agar terpusat) ========== */
+.upcoming {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  margin: 0 auto 50px; /* Tengah dan beri jarak bawah */
+  width: 100%;
+  max-width: 1100px; /* Lebar penuh content wrapper */
+}
+
+.upcoming h2 {
+  color: #152d6b;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+  table-layout: fixed;
+}
+
+table thead {
+  background-color: #152d6b;
+  color: #fff;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+table th:nth-child(1),
+table td:nth-child(1){
+  width: 5%;
+  text-align: center;
+}
+
+table th:nth-child(2),
+table td:nth-child(2){
+  width: 40%;
+  text-align: center;
+}
+
+table th:nth-child(3),
+table td:nth-child(3){
+  width: 25%;
+  text-align: center;
+}
+
+table th:nth-child(4),
+table td:nth-child(4){
+  width: 25%;
+  text-align: center;
+}
+
+/* ========== STATUS BADGES ========== */
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.status.terkirim {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.belum-terkirim {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* --- PENAMBAHAN UNTUK STATUS COUNTDOWN --- */
+
+/* Kritis: JATUH TEMPO HARI INI */
+.status.status-segera {
+    background-color: #f8d7da; /* Merah Muda */
+    color: #721c24; /* Merah Tua */
+    font-weight: bold;
+}
+
+/* Aman: Sisa Hari > 7 */
+.status.status-aman {
+    background-color: #d4edda; /* Hijau Muda */
+    color: #155724; /* Hijau Tua */
+}
+
+/* Baris (TR) yang Jatuh Tempo Hari Ini (Memberi penekanan pada seluruh baris) */
+tr.status-critical {
+    background-color: #fff3cd; /* Kuning Muda/Krem */
+    font-weight: 500;
+}
+
+/* --- AKHIR PENAMBAHAN UNTUK STATUS COUNTDOWN --- */

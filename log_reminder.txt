@@ -1,0 +1,61 @@
+[2025-11-13 05:03:50] ℹ️ Tidak ada jadwal maintenance hari ini.
+[2025-11-13 14:08:57] ℹ️ Tidak ada jadwal maintenance hari ini.
+[2025-11-13 16:19:28] ℹ️ Tidak ada jadwal maintenance hari ini.
+[2025-11-13 16:29:43] 🔔 Ada jadwal maintenance hari ini.
+[2025-11-13 16:29:44] ❌ Gagal kirim ke Renatha Adzuria Arimaya (1762739080).
+[2025-11-13 16:36:02] ℹ️ Tidak ada jadwal maintenance hari ini.
+[2025-11-13 16:36:19] ℹ️ Tidak ada jadwal maintenance hari ini.
+[2025-11-13 22:41:55] Mengecek jadwal untuk tanggal: 2025-11-13
+[2025-11-13 22:41:55] 🔔 Ada 1 jadwal maintenance hari ini.
+[2025-11-13 22:41:56] ✅ Reminder terkirim ke Renatha Adzuria Arimaya (1037459405) — aset: Pendingin Ruangan ABC — next: 2025-11-13
+[2025-11-13 22:41:56] Memulai update 1 jadwal...
+[2025-11-13 22:41:56] ✅ Berhasil Update ID 9 ke 2025-11-13
+[2025-11-13 22:52:44] Mengecek jadwal untuk tanggal: 2025-11-13
+[2025-11-13 22:52:44] 🔔 Ada 1 jadwal maintenance hari ini.
+[2025-11-13 22:52:46] ✅ Reminder terkirim ke Renatha Adzuria Arimaya (1037459405) — aset: Pendingin Ruangan ABC — next: 2025-11-13
+[2025-11-13 22:52:46] Memulai update 1 jadwal...
+[2025-11-13 22:52:46] ✅ Berhasil Update ID 9 ke 2025-11-13
+[2025-11-13 22:53:01] Mengecek jadwal untuk tanggal: 2025-11-13
+[2025-11-13 22:53:01] 🔔 Ada 1 jadwal maintenance hari ini.
+[2025-11-13 22:53:02] ✅ Reminder terkirim ke Renatha Adzuria Arimaya (1037459405) — aset: Pendingin Ruangan ABC — next: 2025-11-13
+[2025-11-13 22:53:02] Memulai update 1 jadwal...
+[2025-11-13 22:53:02] ✅ Berhasil Update ID 9 ke 2025-11-13
+[2025-11-13 23:54:28] Mengecek jadwal untuk tanggal: 2025-11-13
+[2025-11-13 23:54:28] 🔔 Ada 2 jadwal maintenance hari ini.
+[2025-11-13 23:54:29] ✅ Reminder terkirim ke Renatha Adzuria Arimaya (1037459405) — aset: Pendingin Ruangan ABC — next: 2025-11-13
+[2025-11-13 23:54:34] ✅ Reminder terkirim ke Renatha Adzuria Arimaya (1037459405) — aset: Pendingin Ruangan ABC — next: 2025-11-13
+[2025-11-13 23:54:34] Memulai update 2 jadwal...
+[2025-11-13 23:54:34] ✅ Berhasil Update ID 9 ke 2025-11-13
+[2025-11-13 23:54:34] ✅ Berhasil Update ID 10 ke 2025-11-13
+[2025-11-13 23:54:43] Mengecek jadwal untuk tanggal: 2025-11-13
+[2025-11-13 23:54:43] 🔔 Ada 2 jadwal maintenance hari ini.
+[2025-11-13 23:54:44] ✅ Reminder terkirim ke Renatha Adzuria Arimaya (1037459405) — aset: Pendingin Ruangan ABC — next: 2025-11-13
+[2025-11-13 23:54:46] ✅ Reminder terkirim ke Renatha Adzuria Arimaya (1037459405) — aset: Pendingin Ruangan ABC — next: 2025-11-13
+[2025-11-13 23:54:46] Memulai update 2 jadwal...
+[2025-11-13 23:54:46] ✅ Berhasil Update ID 9 ke 2025-11-13
+[2025-11-13 23:54:46] ✅ Berhasil Update ID 10 ke 2025-11-13
+[2025-11-14 00:09:02] Mengecek jadwal untuk tanggal: 2025-11-14
+[2025-11-14 00:09:02] 🔔 Ada 3 jadwal maintenance hari ini.
+[2025-11-14 00:09:03] ✅ Reminder terkirim ke Renatha Adzuria Arimaya (1037459405) — aset:  — next: 2025-11-14
+[2025-11-14 00:09:06] ✅ Reminder terkirim ke Renatha Adzuria Arimaya (1037459405) — aset:  — next: 2025-11-14
+[2025-11-14 00:09:08] ✅ Reminder terkirim ke Renatha Adzuria Arimaya (1037459405) — aset: Genset XYZ — next: 2025-11-14
+[2025-11-14 00:09:08] Memulai update 1 jadwal...
+[2025-11-14 00:09:08] ✅ Berhasil Update ID 7 ke 2025-11-14
+[2025-11-14 09:00:03] Mengecek jadwal untuk tanggal: 2025-11-14
+[2025-11-14 09:00:03] 🔔 Ada 3 jadwal maintenance hari ini.
+[2025-11-14 09:00:04] ✅ Reminder terkirim ke Renatha Adzuria Arimaya (1037459405) — aset:  — next: 2025-11-14
+[2025-11-14 09:00:06] ✅ Reminder terkirim ke Renatha Adzuria Arimaya (1037459405) — aset:  — next: 2025-11-14
+[2025-11-14 09:00:11] ✅ Reminder terkirim ke Renatha Adzuria Arimaya (1037459405) — aset: Genset XYZ — next: 2025-11-14
+[2025-11-14 09:00:11] Memulai update 1 jadwal...
+[2025-11-14 09:00:11] ✅ Berhasil Update ID 7 ke 2025-11-14
+[2025-11-14 09:38:01] Mengecek jadwal untuk tanggal: 2025-11-14
+[2025-11-14 09:38:01] 🔔 Ada 4 jadwal maintenance hari ini.
+[2025-11-14 09:38:02] ✅ Reminder terkirim ke Renatha Adzuria Arimaya (1037459405) — aset:  — next: 2025-11-14
+[2025-11-14 09:38:03] ✅ Reminder terkirim ke Renatha Adzuria Arimaya (1037459405) — aset:  — next: 2025-11-14
+[2025-11-14 09:38:04] ✅ Reminder terkirim ke Renatha Adzuria Arimaya (1037459405) — aset: Genset XYZ — next: 2025-11-14
+[2025-11-14 09:38:05] ✅ Reminder terkirim ke Renatha Adzuria Arimaya (1037459405) — aset: Genset XYZ — next: 2025-11-14
+[2025-11-14 09:38:05] Memulai update 2 jadwal...
+[2025-11-14 09:38:05] ✅ Berhasil Update ID 7 ke 2025-11-14
+[2025-11-14 09:38:05] ✅ Berhasil Update ID 11 ke 2025-11-14
+[2025-11-15 20:00:45] Mengecek jadwal untuk tanggal: 2025-11-15
+[2025-11-15 20:00:46] ℹ️ Tidak ada jadwal maintenance hari ini.
