@@ -35,7 +35,7 @@ if (!$resultMaintenanceBulanIni) die("Query Error Maintenance Bulan Ini: " . mys
 $maintenanceBulanIni = mysqli_fetch_assoc($resultMaintenanceBulanIni)['jumlah'] ?? 0;
 
 
-// C. Pengingat Terkirim (DIPERBAIKI)
+// C. Pengingat Terkirim 
 $queryTotalNotif = "SELECT COUNT(*) AS total FROM notifikasi";
 $resultTotalNotif = mysqli_query($conn, $queryTotalNotif);
 if (!$resultTotalNotif) {
@@ -54,12 +54,6 @@ if (!$resultTerkirim) {
     $terkirim = mysqli_fetch_assoc($resultTerkirim)['terkirim'] ?? 0;
 }
 
-// Menghitung Persentase dengan pengecekan total
-$persenTerkirim = 0;
-if ($totalNotif > 0) {
-    $persenTerkirim = round(($terkirim / $totalNotif) * 100, 1);
-}
-
 
 // === 2. DATA UNTUK CHART ===
 $chartQuery = mysqli_query(
@@ -75,7 +69,7 @@ $jumlah = [];
 if ($chartQuery) {
     while ($row = mysqli_fetch_assoc($chartQuery)) {
         $bulan[] = date('F', mktime(0, 0, 0, $row['bulan'], 1));
-        $jumlah[] = $row['jumlah'];
+        $jumlah[] = (int)$row['jumlah'];
     }
 }
 
@@ -265,7 +259,7 @@ mysqli_close($conn);
         options: {
           responsive: true,
           maintainAspectRatio: false,
-          scales: { y: { beginAtZero: true } },
+          scales: { y: { ticks: { precision:0 } } },
           plugins: { legend: { display: false } }
         }
       });
